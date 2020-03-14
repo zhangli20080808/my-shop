@@ -1,5 +1,5 @@
 import axios from 'axios';
-import config from '../../config'
+import config from '@/config'
 
 // axios.interceptors.request.use(function(config){
 //    console.log('1')
