@@ -59,4 +59,4 @@ app.get("*", function(req, res, next) {
   });
 });
 
-var server = app.listen(3010);
+app.listen(3010);

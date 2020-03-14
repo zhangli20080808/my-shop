@@ -1,5 +1,5 @@
 import axios from 'axios';
-import config from '../../config'
+import config from '@/config'
 import cookies from 'jscookie'
 const instance = axios.create({
 	baseURL: '/',

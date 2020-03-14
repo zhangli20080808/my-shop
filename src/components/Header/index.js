@@ -1,10 +1,10 @@
 import React, { Fragment, Component } from 'react';
 import { Redirect, Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { logout } from '../../containers/Login/store/actions';
-import { getUserInfo } from '../../containers/Login/store/actions'
+import { logout } from '@/containers/Login/store/actions';
+import { getUserInfo } from '@/containers/Login/store/actions'
 import styles from './style.css';
-import withStyle from '../../withStyle';
+import withStyle from '@/withStyle';
 import cookies from 'jscookie'
 
 

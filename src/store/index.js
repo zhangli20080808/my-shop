@@ -1,13 +1,13 @@
 import { createStore, applyMiddleware, combineReducers } from 'redux';
 import thunk from 'redux-thunk';
-import { reducer as headerReducer } from '../components/Header/store';
-import { reducer as homeReducer } from '../containers/Home/store';
-import { reducer as registerReducer } from '../containers/Register/store';
-import { reducer as LoginReducer } from '../containers/Login/store';
+import { reducer as headerReducer } from '@/components/Header/store';
+import { reducer as homeReducer } from '@/containers/Home/store';
+import { reducer as registerReducer } from '@/containers/Register/store';
+import { reducer as LoginReducer } from '@/containers/Login/store';
 
 
 
-import { reducer as translationReducer } from '../containers/Translation/store';
+import { reducer as translationReducer } from '@/containers/Translation/store';
 import clientAxios from '../client/request';
 import serverAxios from '../server/request';
 
