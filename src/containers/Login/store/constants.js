@@ -1,0 +1,4 @@
+export const CHANGE_LOGIN = 'CHANGE_LOGIN';
+export const CHANGE_USERINFO = 'CHANGE_USERINFO';
+export const CHANGE_LOGUT = 'CHANGE_LOGUT';
+

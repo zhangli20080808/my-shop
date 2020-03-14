@@ -1,0 +1,10 @@
+node_modules/
+test/
+.idea/
+config/*.js
+*.map
+*.log
+*.log*
+public/js/build/pc/*.js
+public/js/build/mobile/*.js
+webpack.assets.json

@@ -1,0 +1,58 @@
+.register {
+    margin: 0 20px; }
+    .register h2 {
+      padding-top: 30px; }
+    .register .login-form {
+      padding: 30px 40px 10px; }
+  
+  .registerpage {
+    background: #fff;
+    height: 100%;
+    position: absolute;
+    width: 100%; }
+    .registerpageregisterpage .get-code {
+      position: absolute;
+      z-index: 9;
+      top: 0;
+      right: 0;
+      height: 38px;
+      line-height: 38px;
+      min-width: 100px;
+      text-align: center;
+      color: #fe5e7a;
+      font-weight: bold; }
+    .registerpage .get-code-false {
+      color: #ccc;
+      cursor: not-allowed; }
+    .registerpage .error5 {
+      top: 35px;
+      left: 0;
+      width: 100%;
+      border: 0;
+      background-color: transparent;
+      text-align: left; }
+    .registerpage .login-sec2 .phone-col {
+      width: 190px !important;
+      margin-left: 110px !important; }
+    .registerpage.login-sec2 .register-style input {
+      padding-left: 10px !important; }
+    .registerpage .login-sec2 .register-btn {
+      display: block;
+      width: 300px;
+      height: 38px;
+      line-height: 38px;
+      border-radius: 4px;
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      margin: 0 auto 10px !important; }
+    .registerpage .login-sec2 .to-login {
+      text-align: right;
+      display: block;
+      text-decoration: underline;
+      color: #333;
+      padding-right: 37px;
+      padding-bottom: 15px; }
+    .registerpage .login {
+      margin-top: 0; }
+  
+      
