@@ -13,7 +13,7 @@ import config from '../../config'
 
 const createInstance = req => {
 	let simpleInstant = axios.create({
-		baseURL: 'http://120.24.4.23:9091/api',
+		baseURL: 'http://212.64.7.78:9091/api',
 		// baseURL: 'http://13.210.45.74:9091/api',
 
 		headers: {

@@ -23,7 +23,6 @@ export const register = (body) => {
 	return (dispatch, getState, axiosInstance) => {
 		return axiosInstance.post('/c/customers/register', params)
 			.then((res) => {
-				console.log(res)
 				if (res.data.data) {
 					dispatch(registerSuccess(res.data.data))
 				} else {

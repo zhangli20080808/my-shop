@@ -22,7 +22,6 @@ export default (state = defaultState, action) => {
 				redirectTo: getRedirectPath(action.payload)
 			}
 		case ERROR_MSG:
-		console.log('2')
 			return {
 				...state,
 				...action.payload

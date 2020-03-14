@@ -29,7 +29,6 @@ export const toLogin = (data) => {
 				// const list = res.data.data;
                 dispatch(changeLogin(authorization))
 			}).catch((err)=>{
-				console.log(err)
 			})
 	}
 } 
@@ -37,10 +36,8 @@ export const getUserInfo = ()=>{
     return (dispatch, getState, axiosInstance) => {
 		return axiosInstance.get('/c/me')
 			.then((res) => {
-                console.log(res.data,'userinfo')             
                 dispatch(changeUserInfo(res.data.data))
 			}).catch((err)=>{
-				console.log(err)
 			})
 	}
 }
@@ -49,12 +46,10 @@ export const logout = () => {
 	return (dispatch, getState, axiosInstance) => {
 		return axiosInstance.get('/c/me')
 			.then((res) => {
-				console.log(res.data, 'userinfo')
                 const data = res.data.data ? null:''
                 cookies.del('authorization')
 				dispatch(changeLogut(data))
 			}).catch((err) => {
-				console.log(err)
 			})
 	}
 }

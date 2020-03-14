@@ -6,7 +6,7 @@ export default (DecoratedComponent, styles) => {
 	// 返回的这个组件，叫做高阶组件
 	return class NewComponent extends Component {
 
-		componentWillMount() {
+		UNSAFE_componentWillMount() {
 			if (this.props.staticContext) {
 				this.props.staticContext.css.push(styles._getCss());
 			}

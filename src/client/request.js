@@ -27,8 +27,6 @@ instance.interceptors.response.use(
 
 	},
 	error => {  //响应错误处理
-		console.log('error');
-		console.log(error);
 		return Promise.reject(error)
 	}
 )

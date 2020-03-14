@@ -11,7 +11,6 @@ import cookies from 'jscookie'
 class Header extends Component {
 	componentDidMount() {
 		const {isLogin, userInfo ,getUserInfo}= this.props
-		console.log(this.props)
 		const token = cookies.get('authorization')
 		if (isLogin) {
 			if (!userInfo) {
@@ -27,13 +26,12 @@ class Header extends Component {
 
 		const { userInfo, shopInfo, handleLogout } = this.props;
 		return (
-			<div className={styles.container}>
+			<div >
 
-				<Link to='/' className={styles.item}>首页</Link>
+				<Link to='/'>首页</Link>
 				{
 					shopInfo ? <Fragment>
 						<div>{shopInfo.phone}</div><div>{shopInfo.email}</div>
-						<Link to='/translation' className={styles.item}>翻译列表</Link>
 					</Fragment> : ''
 				}
 				{
