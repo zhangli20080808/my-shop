@@ -25,14 +25,15 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get("*", function(req, res, next) {
+
+  const {shopId} = req.cookies
+  console.log(shopId,1)
 	
   const store = getStore(req);
   // 根据路由的路径，来往store里面加数据
   const matchedRoutes = matchRoutes(routes, req.path);
   // 让matchRoutes里面所有的组件，对应的loadData方法执行一次
   const promises = [];
-  console.log('test');
-
   matchedRoutes.forEach(item => {
     if (item.route.loadData) {
       const promise = new Promise((resolve, reject) => {

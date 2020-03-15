@@ -34,14 +34,6 @@ const clientConfig = {
         }
       }
     ]
-  },
-  resolve: {
-    alias: {
-      "@/containers": path.resolve(__dirname, "./src/containers"),
-      "@/components": path.resolve(__dirname, "./src/components"),
-	  "@/config": path.resolve(__dirname, "./config"),
-	  "@/withStyle": path.resolve(__dirname, "./src/withStyle.js"),
-    }
   }
 };
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import App from './App';
 import Home from './containers/Home';
-import Translation from './containers/Translation';
+// import Translation from './containers/Translation';
 import Register from './containers/Register';
 import Login from './containers/Login';
 

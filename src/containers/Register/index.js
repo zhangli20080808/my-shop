@@ -1,8 +1,8 @@
-import React, { Fragment, Component } from 'react';
-import PropTypes from 'prop-types';
-import {Redirect,Link} from 'react-router-dom'
-import { connect } from 'react-redux'
-import { register } from '../Register/store/actions'
+import React, { Fragment, Component } from "react";
+import PropTypes from "prop-types";
+import { Redirect, Link } from "react-router-dom";
+import { connect } from "react-redux";
+import { register } from "../Register/store/actions";
 
 const propTypes = {};
 
@@ -14,21 +14,17 @@ const defaultProps = {};
 // )
 
 function Register(props) {
-    return (
-        <React.Fragment>
-            Register
-        </React.Fragment>
-    );
+  return <React.Fragment>Register</React.Fragment>;
 }
 
 Register.propTypes = propTypes;
 Register.defaultProps = defaultProps;
 
 const mapStateToProps = state => {
-    return {state}
+  return { state };
 };
-const mapDispatchToProps = (dispatch) => {
-    return {dispatch}
+const mapDispatchToProps = dispatch => {
+  return { dispatch };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Register)
+export default connect(mapStateToProps, mapDispatchToProps)(Register);
